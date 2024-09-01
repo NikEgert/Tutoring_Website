@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {Link as LinkRouter} from 'react-router-dom'
-import {Link as LinkScroll} from 'react-scroll'
+import {Link as LinkRouter} from 'react-router-dom';
+import {Link as LinkScroll} from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #FBE8A6;
@@ -16,6 +16,18 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
+`;
+
+export const CodeSteps = styled.div`
+    color: #303C6C;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-weight: bold;
+    text-decoration: none;
 `
 
 export const NavbarContainer = styled.div`
@@ -26,19 +38,19 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
-`
+`;
 
 export const NavLogo = styled(LinkRouter)`
-    color: white;
+    color: #303C6C;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-`
+`;
 
 export const MobileIcon = styled.div`
     display: none;
@@ -53,7 +65,7 @@ export const MobileIcon = styled.div`
         cursor: pointer;
         color: #303C6C;
     }
-`
+`;
 
 export const NavMenu = styled.ul`
     display: flex;
@@ -65,11 +77,11 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
 
 export const NavItem = styled.li`
     height: 80px;
-`
+`;
 
 export const NavLinks = styled(LinkScroll)`
     color: #303C6C;
@@ -78,12 +90,13 @@ export const NavLinks = styled(LinkScroll)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    font-weight: bold;
     cursor: pointer;
 
     &.active {
         border-bottom: 3px solid red;
     }
-`
+`;
 
 export const NavBtn = styled.nav `
     display: flex;
@@ -92,7 +105,7 @@ export const NavBtn = styled.nav `
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
 
 export const NavBtnLink = styled(LinkRouter) `
     border-radius: 50px;
@@ -101,6 +114,7 @@ export const NavBtnLink = styled(LinkRouter) `
     padding: 15px 22px;
     color: white;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
@@ -110,4 +124,4 @@ export const NavBtnLink = styled(LinkRouter) `
         background: #3C4A85;    
         color: white;
     }
-`
+`;

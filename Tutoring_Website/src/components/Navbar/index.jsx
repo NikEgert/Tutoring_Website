@@ -1,13 +1,18 @@
 import React from 'react';
+import { Gi3dStairs } from 'react-icons/gi';
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CodeSteps} from './NavbarElements'
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <>
          <Nav>
           <NavbarContainer>
-            <NavLogo to='/'>Logo</NavLogo>
+            <NavLogo to='/'>
+             <Gi3dStairs />
+             <CodeSteps>CodeSteps</CodeSteps>
+            </NavLogo>
             <MobileIcon>
                 <FaBars />
             </MobileIcon>
@@ -23,7 +28,7 @@ const Navbar = () => {
              </NavItem>
             </NavMenu>
             <NavBtn>
-                 <NavBtnLink to="contact">Contact Us</NavBtnLink>
+             <NavBtnLink to="/contact">Contact Us</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
          </Nav>
