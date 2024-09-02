@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Link as LinkScroll} from 'react-scroll';
 import {Link as LinkRouter} from 'react-router-dom';
-import { Gi3dStairs } from 'react-icons/gi';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside `
     position: fixed;
@@ -14,12 +14,17 @@ export const SidebarContainer = styled.aside `
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen}) => (isOpen ? '0' : '-100%')};
+    /* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen}) => (isOpen ? '0' : '-100%')}; */
 `;
 
-export const CloseIcon = styled(Gi3dStairs)`
+export const CloseIcon = styled(FaTimes)`
     color: #303C6C;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;   
+        color: #3C4A85;
+    }
 `;
 
 export const Icon = styled.div `

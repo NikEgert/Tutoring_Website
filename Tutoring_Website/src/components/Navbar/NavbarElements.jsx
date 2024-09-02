@@ -36,7 +36,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
+    padding: 0 22px;
     max-width: 1100px;
 `;
 
@@ -72,7 +72,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: 25px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -88,7 +88,7 @@ export const NavLinks = styled(LinkScroll)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 1.5rem;
     height: 100%;
     font-weight: bold;
     cursor: pointer;
