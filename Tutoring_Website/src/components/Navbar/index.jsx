@@ -4,7 +4,7 @@ import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CodeSteps} from './NavbarElements'
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
          <Nav>
@@ -13,7 +13,7 @@ const Navbar = () => {
              <Gi3dStairs />
              <CodeSteps>CodeSteps</CodeSteps>
             </NavLogo>
-            <MobileIcon>
+            <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>
