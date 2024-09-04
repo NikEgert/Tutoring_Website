@@ -32,11 +32,11 @@ export const CodeSteps = styled.div`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 22px;
+    padding: 0 40px;
     max-width: 1100px;
 `;
 
@@ -47,7 +47,6 @@ export const NavLogo = styled(LinkRouter)`
     font-size: 3rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
 `;
@@ -72,7 +71,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: 25px;
+    margin-right: 90px;
 
     @media screen and (max-width: 768px) {
         display: none;
