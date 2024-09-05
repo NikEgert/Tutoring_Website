@@ -25,7 +25,7 @@ export const CodeSteps = styled.div`
     font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
     font-weight: bold;
     text-decoration: none;
 `
@@ -36,7 +36,6 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 40px;
     max-width: 1100px;
 `;
 
@@ -49,6 +48,7 @@ export const NavLogo = styled(LinkRouter)`
     align-items: center;
     font-weight: bold;
     text-decoration: none;
+
 `;
 
 export const MobileIcon = styled.div`
@@ -71,7 +71,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: 90px;
+    margin-right: 65px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -117,6 +117,7 @@ export const NavBtnLink = styled(LinkRouter) `
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    margin-right: 30px;
 
     &:hover{
         transition: all 0.2s ease-in-out;
