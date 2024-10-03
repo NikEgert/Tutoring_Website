@@ -43,7 +43,7 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 37vh; /* Use viewport height (vh) to position relative to the viewport height */
+    top: 37vh;
     gap: 20px;
 `
 
