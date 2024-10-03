@@ -3,7 +3,8 @@ import {Link as LinkRouter} from 'react-router-dom';
 import {Link as LinkScroll} from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: #FBE8A6;
+    /* background: #FBE8A6; */
+    background: #303C6C;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -18,8 +19,9 @@ export const Nav = styled.nav`
     }
 `;
 
-export const CodeSteps = styled.div`
-    color: #303C6C;
+export const CodeHead = styled.div`
+    /* color: #303C6C; */
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 2rem;
@@ -40,7 +42,8 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRouter)`
-    color: #303C6C;
+    /* color: #303C6C; */
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 3rem;
@@ -62,7 +65,8 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.5rem;
         cursor: pointer;
-        color: #303C6C;
+        /* color: #303C6C; */
+        color: #fff;
     }
 `;
 
@@ -83,7 +87,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: #303C6C;
+    /* color: #303C6C; */
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -108,7 +113,8 @@ export const NavBtn = styled.nav `
 
 export const NavBtnLink = styled(LinkRouter) `
     border-radius: 50px;
-    background: #303C6C;
+    /* background: #303C6C; */
+    background: #f9a826;
     white-space: nowrap;
     padding: 15px 22px;
     color: white;
@@ -121,7 +127,10 @@ export const NavBtnLink = styled(LinkRouter) `
 
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: #3C4A85;    
-        color: white;
+        /* background: #3C4A85;     */
+        /* background: #f9a826; */
+        background: #fff;
+        /* color: white; */
+        color: #3C4A85;
     }
 `;

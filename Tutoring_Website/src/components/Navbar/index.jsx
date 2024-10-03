@@ -1,7 +1,7 @@
 import React from 'react';
-import { Gi3dStairs } from 'react-icons/gi';
+import { TbRobot } from "react-icons/tb";
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CodeSteps} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CodeHead} from './NavbarElements'
 import { NavLink } from 'react-router-dom';
 
 const Navbar = ({toggle}) => {
@@ -10,8 +10,8 @@ const Navbar = ({toggle}) => {
          <Nav>
           <NavbarContainer>
             <NavLogo to='/'>
-             <Gi3dStairs />
-             <CodeSteps>CodeSteps</CodeSteps>
+             <TbRobot />
+             <CodeHead>CodeHead</CodeHead>
             </NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars />
