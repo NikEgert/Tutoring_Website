@@ -10,7 +10,11 @@ export const HeroContainer = styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
-`
+
+    @media screen and (min-height: 950px) {
+        height: 945px;
+    }
+`;
 
 export const HeroBg = styled.div`
     position: absolute;
@@ -28,19 +32,22 @@ export const VideoBg = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: black;
+    background: white;
 `
 
 export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    padding: 8px 24px;
+    padding: 8px 20px;
     display: flex;
-    flex-direction: column-gap;
+    flex-direction: column;
     align-items: center;
-    top: 300px;
+    top: 37vh; /* Use viewport height (vh) to position relative to the viewport height */
+    gap: 20px;
 `
+
+
 
 export const HeroH1 = styled.h1`
     color: #303C6C;
@@ -79,9 +86,9 @@ export const Button = styled(Link) `
     border-radius: 50px;
     background: #303C6C;
     white-space: nowrap;
-    padding: 15px 30px;
+    padding: 20px 35px;
     color: white;
-    font-size: '20px';
+    font-size: 20px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -92,7 +99,6 @@ export const Button = styled(Link) `
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        /* background: #3C4A85; */
         background: #f9a826;
     }
 `   

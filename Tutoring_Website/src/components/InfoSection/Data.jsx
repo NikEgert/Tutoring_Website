@@ -6,47 +6,52 @@ export const homeObjOne = {
     id: 'about',
     lightBg: true,
     lightText: true,
-    topLine: 'Coding for All Ages',
-    headline: 'Start Coding with Fun and Easy Lessons',
-    description: "Whether you're in primary school or just starting out, we teach you the basics of coding using interactive games and simple projects that make learning fun and approachable. Our goal is to help you build confidence and develop problem-solving skills from the very beginning.",
-    buttonLabel: 'Get Started',
+    lightTextDesc: true,
+    topLine: 'About CodeHead',
+    headline: 'Your Gateway to Coding Mastery',
+    description: "At CodeHead, our goal is to make coding simple, fun, and accessible for everyone. Whether you're just starting or looking to enhance your skills, our one-on-one tutoring is designed to empower students through personalized lessons, ensuring a solid foundation in coding.",
+    buttonLabel: 'Learn More',
     imgStart: false,
-    img: img1,
-    alt: 'About Section',
+    img: img1,  // Relevant image representing learning or growth
+    alt: 'About CodeHead',
     dark: true,
     primary: true,
     darkText: false
-}
+};
+
 
 export const homeObjTwo = {
     id: 'discover',
     lightBg: false,
     lightText: true,
-    topLine: 'Discover the World of Code',
-    headline: 'Unlock New Possibilities by Learning to Code',
-    description: "Explore the world of coding with fun and interactive lessons that will help you discover new skills. Whether you're curious about building websites, creating games, or developing apps, we guide you step-by-step to unleash your potential.",
+    lightTextDesc: false,
+    topLine: 'Discover the Power of Code',
+    headline: 'Learn Skills That Shape the Future',
+    description: "Coding isn't just about writing programs—it's about solving problems and turning ideas into reality. At CodeHead, we help you discover the potential of coding, from building your own apps to gaining essential problem-solving skills that will be valuable in any career.",
     buttonLabel: 'Discover More',
     imgStart: true,
-    img: img2,
+    img: img2,  // Image representing exploration or future tech
     alt: 'Discover Coding',
-    dark: false,
+    dark: true,
     primary: false,
     darkText: false
-}
+};
+
 
 
 export const homeObjThree = {
-    id: 'services',
+    id: 'learning',
     lightBg: true,
     lightText: true,
-    topLine: 'Comprehensive Tutoring Services',
-    headline: 'Tailored Coding Lessons for All Ages',
-    description: "We offer a range of tutoring services designed to meet the needs of students from primary school to early university. Whether you're just starting out or looking to advance your skills, our services are personalised to ensure you succeed in your coding journey.",
-    buttonLabel: 'View Services',
+    lightTextDesc: false,
+    topLine: 'Personalied Learning',
+    headline: 'Flexible One-on-One Tutoring, Tailored for You',
+    description: "At CodeHead, we understand that every student learns differently. That's why our tutoring sessions are designed to fit your needs—whether you prefer learning online or in-person, we’ll create a customized plan that helps you achieve your coding goals at your own pace.",
+    buttonLabel: 'Get Started',
     imgStart: false,
     img: img3,
-    alt: 'Tutoring Services',
-    dark: false,
+    alt: 'Personalised Learning',
+    dark: true,
     primary: true,
     darkText: false
-}
+};
