@@ -1,27 +1,20 @@
-import React from 'react'
+import React, {useRef} from 'react'
+
+import {motion, useScroll, useTransform} from 'framer-motion';
 
 const Projects = () => {
     return (
-        <ProjectsContainer>
-         <ProjectH1>Build Real Projects</ProjectH1>
-         <ProjectsWrapper>
-          <ProjectThird>
-            <ProjectImage src={Project1}/>
-            <ProjectH2>Project1</ProjectH2>
-            <ProjectP>About project 1...</ProjectP>
-          </ProjectThird>
-          <ProjectThird>
-            <ProjectImage src={Project2}/>
-            <ProjectH2>Project2</ProjectH2>
-            <ProjectP>About Project 2...</ProjectP>
-          </ProjectThird>
-          <ProjectThird>
-            <ProjectImage src={Project3}/>
-            <ProjectH2>Project3</ProjectH2>
-            <ProjectP>About Project 3...</ProjectP>
-          </ProjectThird>
-         </ProjectsWrapper>
-        </ProjectsContainer>
+      <Carousel>
+        <ContentContainer>
+          <Images>
+            <ImageItem>
+              <ImageContainer>
+                <Img src={img1} alt={alt}></Img>
+              </ImageContainer>
+            </ImageItem>
+          </Images>
+        </ContentContainer>
+      </Carousel>
     )
 }
 

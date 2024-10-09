@@ -48,7 +48,6 @@ export const HeroContent = styled.div`
 `
 
 
-
 export const HeroH1 = styled.h1`
     color: #303C6C;
     font-size: 48px;
